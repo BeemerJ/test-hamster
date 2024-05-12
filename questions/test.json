@@ -1,0 +1,95 @@
+{
+  "sortMethod": 1,
+  "sections": [
+    {
+      "sectionName": "Rock",
+      "sectionAmount": 4,
+      "questions": [
+        {
+          "questionName": "Question 1",
+          "questionCont": "Which rock band's album 'The Dark Side of the Moon' stayed on the Billboard 200 chart for over 900 weeks?",
+          "questionOptions": ["The Beatles", "Pink Floyd", "Led Zeppelin", "Queen"],
+          "questionAnswer": 1
+        },
+        {
+          "questionName": "Question 2",
+          "questionCont": "What was the first rock and roll song to hit number one on the Billboard Hot 100 chart?",
+          "questionOptions": ["Rock Around the Clock", "Hound Dog", "Johnny B. Goode", "I Want to Hold Your Hand"],
+          "questionAnswer": 0
+        },
+        {
+          "questionName": "Question 3",
+          "questionCont": "Who is often called 'The King of Rock and Roll'?",
+          "questionOptions": ["Elvis Presley", "Michael Jackson", "Chuck Berry", "Buddy Holly"],
+          "questionAnswer": 0
+        },
+        {
+          "questionName": "Question 4",
+          "questionCont": "Which rock band's logo features a tongue sticking out?",
+          "questionOptions": ["The Rolling Stones", "Aerosmith", "KISS", "AC/DC"],
+          "questionAnswer": 0
+        }
+      ]
+    },
+    {
+      "sectionName": "Pop",
+      "sectionAmount": 4,
+      "questions": [
+        {
+          "questionName": "Question 1",
+          "questionCont": "Who is known as the 'Queen of Pop'?",
+          "questionOptions": ["Madonna", "Beyoncé", "Lady Gaga", "Rihanna"],
+          "questionAnswer": 0
+        },
+        {
+          "questionName": "Question 2",
+          "questionCont": "Which artist released the album 'Thriller', the best-selling album of all time?",
+          "questionOptions": ["Prince", "Michael Jackson", "Elton John", "Stevie Wonder"],
+          "questionAnswer": 1
+        },
+        {
+          "questionName": "Question 3",
+          "questionCont": "Who was the first female artist to achieve five number-one singles from one album?",
+          "questionOptions": ["Adele", "Whitney Houston", "Mariah Carey", "Janet Jackson"],
+          "questionAnswer": 2
+        },
+        {
+          "questionName": "Question 4",
+          "questionCont": "What song holds the record for the longest run at number one on the Billboard Hot 100 chart?",
+          "questionOptions": ["Old Town Road", "Despacito", "One Sweet Day", "Shape of You"],
+          "questionAnswer": 2
+        }
+      ]
+    },
+    {
+      "sectionName": "Hip-Hop",
+      "sectionAmount": 4,
+      "questions": [
+        {
+          "questionName": "Question 1",
+          "questionCont": "Who is often referred to as the 'Godfather of Hip-Hop'?",
+          "questionOptions": ["Dr. Dre", "Snoop Dogg", "Jay-Z", "Afrika Bambaataa"],
+          "questionAnswer": 3
+        },
+        {
+          "questionName": "Question 2",
+          "questionCont": "What was the first hip-hop song to win a Grammy Award?",
+          "questionOptions": ["The Message", "Rapper's Delight", "Fight the Power", "Walk This Way"],
+          "questionAnswer": 1
+        },
+        {
+          "questionName": "Question 3",
+          "questionCont": "Who released the album 'The Miseducation of Lauryn Hill'?",
+          "questionOptions": ["Missy Elliott", "Lil' Kim", "Fugees", "Lauryn Hill"],
+          "questionAnswer": 3
+        },
+        {
+          "questionName": "Question 4",
+          "questionCont": "What hip-hop group performed the song 'Straight Outta Compton'?",
+          "questionOptions": ["Public Enemy", "N.W.A", "Wu-Tang Clan", "Outkast"],
+          "questionAnswer": 1
+        }
+      ]
+    }
+  ]
+}

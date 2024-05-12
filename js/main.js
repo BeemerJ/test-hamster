@@ -1,5 +1,6 @@
 import { sortQuestions } from './sort.js';
 import { showResult } from './results.js';
+import { handleKeyboardEvents } from './keyboardEvents.js';
 
 const questionContainer = document.getElementById("question-container");
 const buttonContainer = document.getElementById("button-container");
@@ -16,6 +17,7 @@ fetch("/questions/test.json")
   .then(data => {
     questions = sortQuestions(data.sections, data.sortMethod);
     displayQuestion(questions[currentQuestionIndex]);
+    handleKeyboardEvents(questions, currentQuestionIndex, nextButton);
   })
   .catch(err => console.error(err));
 
@@ -34,6 +36,25 @@ function displayQuestion(question) {
       `).join("")}
     </ul>
   `;
+
+  // Remove existing event listeners for number buttons
+  document.body.removeEventListener("keypress", handleNumberKeyPress);
+
+  // Add event listener for number buttons
+  document.body.addEventListener("keypress", handleNumberKeyPress);
+}
+
+// Event listener for number buttons
+function handleNumberKeyPress(event) {
+  const number = parseInt(event.key);
+  if (!isNaN(number) && number > 0 && number <= questions[currentQuestionIndex].questionOptions.length) {
+    // Select the corresponding option
+    const optionIndex = number - 1;
+    const radioInput = document.getElementById(questions[currentQuestionIndex].questionOptions[optionIndex]);
+    if (radioInput) {
+      radioInput.checked = true;
+    }
+  }
 }
 
 // Event listener for next button click

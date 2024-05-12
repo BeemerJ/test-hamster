@@ -1,0 +1,22 @@
+#footer {
+    background-color: var(--light-grey);
+    color: var(--white);
+    font-size: x-small;
+    padding: 4px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: opacity 128ms linear;
+}
+
+#footer-text {
+    flex-grow: 1;
+    text-align: left;
+}
+
+#footer-info {
+    margin-right: 0.8em;
+    text-align: right;
+}

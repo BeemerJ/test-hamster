@@ -1,0 +1,52 @@
+#button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: calc(((100vw - var(--width)) / 2) - 1.25em);
+    margin-right: calc(((100vw - var(--width)) / 2) - 1.25em);
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    border-radius: var(--radius-small);
+    cursor: pointer;
+    transition: filter 128ms;
+}
+
+button:hover {
+    filter: var(--hover);
+}
+
+#prev-btn,
+#next-btn {
+    width: auto;
+    max-width: fit-content;
+}
+
+/* Selections */
+
+.radio-label {
+    display: inline-block;
+    background-color: var(--grey);
+    justify-content: center;
+    width: calc(100% - 1.2em); /* I don't even know man... */
+    padding: 8px;
+    border: 1px solid var(--white);
+    border-radius: var(--radius-small);
+    cursor: pointer;
+    transition: filter var(--hovertime2);
+}
+
+.radio-label:hover {
+    filter: var(--hover);
+}
+
+input[type="radio"]:checked+.radio-label {
+    border-color: var(--green);
+    outline: 2px solid var(--green);
+    filter: none;
+}

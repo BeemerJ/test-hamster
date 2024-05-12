@@ -1,0 +1,39 @@
+:root {
+    --blue: #3498db;
+    --green: #1abc9c;
+    --orange: #f39c12;
+    --grey: #2c3e50;
+    --light-grey: #425b74;
+    --white: #ecf0f1;
+
+    --width: 80vw;
+    --radius: 8px;
+    --radius-small: 4px;
+
+    --hover: brightness(125%);
+    --hovertime: 128ms;
+    --hovertime2: 64ms;
+}
+
+html {
+    background-color: var(--grey);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: var(--white);
+    text-align: center;
+    padding: 0.4em;
+    max-width: calc((80vw) + 12px);
+    margin: auto;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+    border: 1px solid var(--white);
+    border-radius: var(--radius);
+}
